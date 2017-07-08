@@ -1,0 +1,150 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: auto;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: auto;
+  /*�������᷽��Ϊˮƽ����*/
+  display: flex;
+  flex-direction: column;
+  /*�������᷽��Ϊˮƽ����*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+}
+.header {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+  /*�������᷽��Ϊˮƽ����*/
+  display: flex;
+  flex-direction: row;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.header .header_l {
+  width: 100px;
+  height: 40px;
+  background: none;
+  float: left;
+}
+.header .header_l .dian {
+  width: 3px;
+  height: 15px;
+  background: none;
+  background: url("../images/lvdian.png") no-repeat;
+  margin: 12px 0 0 18px;
+  box-sizing: border-box;
+  float: left;
+}
+.header .header_l .tu {
+  float: left;
+  width: 34px;
+  height: 34px;
+  background: none;
+  background: url("../images/tu.png") no-repeat;
+  margin-top: 2px;
+  margin-left: 6px;
+}
+.header .header_c {
+  text-align: center;
+  flex-grow: 1;
+  float: left;
+  width: 100%;
+  height: 40px;
+  background: none;
+  line-height: 40px;
+  color: #000000;
+  font-size: 16px;
+}
+.header .header_r {
+  float: right;
+  width: 100px;
+  height: 40px;
+  background: none;
+}
+.header .header_r .sao {
+  width: 18px;
+  height: 18px;
+  background: none;
+  background: url("../images/lvsaoyisao.png") no-repeat;
+  margin-top: 10px;
+  float: right;
+  margin-right: 18px;
+}
+.mass {
+  width: 100%;
+  height: 160px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+}
+.mass p {
+  padding-bottom: 15px;
+  color: #808080;
+  padding-top: 70px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+.mass a {
+  color: #ffffff;
+  box-sizing: border-box;
+  background: #49b849;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 3px;
+}
+.main {
+  flex-grow: 1;
+  width: 63px;
+  height: 103px;
+  background: none;
+  margin: 0 auto;
+  flex-direction: column;
+  background: url("../images/kulian.png") no-repeat center;
+}
+.footer {
+  background: #f8f8f8;
+  width: 100%;
+  height: 49px;
+  border-top: 1px solid #b2b2b2;
+  position: fixed;
+  bottom: 0;
+}
+.footer a {
+  outline: none;
+  box-sizing: border-box;
+  padding-top: 5px;
+  float: left;
+  width: 33.3333333%;
+  text-align: center;
+  text-decoration: none;
+}
+.footer a span {
+  display: block;
+  font-size: 10px;
+  color: #717171;
+  font-weight: bold;
+}
+.footer a em {
+  position: relative;
+  left: 0;
+  top: 20px;
+}

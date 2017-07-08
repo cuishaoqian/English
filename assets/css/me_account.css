@@ -1,0 +1,99 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+.header {
+  width: 100%;
+  height: 4rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  flex-direction: row;
+  /*设置主轴方向为水平方向*/
+}
+.header .header_l {
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  background: url("../images/zuo_tan.png") no-repeat;
+  background-position: center center;
+}
+.header .header_c {
+  font-size: 1.8rem;
+  flex-grow: 1;
+  width: 100%;
+  height: 4rem;
+  background: none;
+  line-height: 4rem;
+  text-align: center;
+}
+.header .header_r {
+  float: right;
+  width: 4rem;
+  height: 4rem;
+  background: none;
+}
+.main {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+}
+.main .deng {
+  display: flex;
+  flex-direction: row;
+  /*设置主轴方向为水平方向*/
+  width: 100%;
+  height: 3.9rem;
+  background: #ffffff;
+  line-height: 3.8rem;
+  border-bottom: 1px solid #c8c7cc;
+}
+.main .deng .header_l {
+  float: left;
+  font-size: 1.4rem;
+  width: auto;
+  height: auto;
+  background: none;
+  text-align: center;
+}
+.main .deng .header_c {
+  flex-grow: 1;
+}
+.main .deng .header_r {
+  float: right;
+  color: #666666;
+  font-size: 1.4rem;
+}
+.main .deng .header_r img {
+  padding-right: 1.2rem;
+  box-sizing: border-box;
+}
+.main .deng .header_r a {
+  padding-right: 1.2rem;
+  box-sizing: border-box;
+}
+.kong {
+  width: 100%;
+  height: 2rem;
+  background: #f8f8f8;
+}
+.tui {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}

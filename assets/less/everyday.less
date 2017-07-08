@@ -1,0 +1,76 @@
+
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+
+.box(@ver:horizontal){
+  display: -webkit-box;//老版将当前对象装换为弹性盒
+  -webkit-box-orient: @ver;//控制子元素排列方向
+}
+.flex(@ver:row){
+  display:flex;//新版将当前对象装换为弹性盒
+  flex-direction: @ver;/*设置主轴方向为水平方向*/
+}
+html{
+  font-size: 62.5%;//将rem转换为1rem=10px;
+}
+html,body,.wrap{
+  .full(100%,100%,#f8f8f8);
+  .flex(column);
+}
+.header{
+  .full(100%,4rem,#243f70);
+  color: #ffffff;
+  line-height: 3rem;
+  .flex;
+  .header_l{
+    padding-left: 1rem;
+    float: left;
+    background-position: right;
+    font-size: 2rem;
+  }
+  .header_c{
+
+    text-align: center;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+  .header_r{
+    float: right;
+    padding-right: 1.2rem;
+    box-sizing: border-box;
+  }
+}
+.main{
+  flex-grow: 1;
+//.full(100%,100%,#f8f8f8);
+.full(100%,100%,none);
+  .xiajian{
+    margin-top: 1rem;
+    box-sizing: border-box;
+    .full(auto,1.5rem,none);
+    background: url("../images/xiajian.png") no-repeat;
+    background-position:center ;
+    //background-color: red;
+  }
+ .zhu{
+   font-size: 1.6rem;
+   padding-top: 30%;
+   padding-bottom: 2rem;
+   padding-left: 2.8rem;
+   box-sizing: border-box;
+ }
+  .gu{
+    color: #666666;
+    box-sizing: border-box;
+    padding: 0 2.8rem;
+    //text-align: center;
+  }
+}
+
+.footer{
+  .full(100%,4rem,#ffffff);
+  line-height: 4rem;
+}

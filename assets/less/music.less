@@ -1,0 +1,180 @@
+
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+
+.box(@ver:horizontal){
+  display: -webkit-box;//老版将当前对象装换为弹性盒
+  -webkit-box-orient: @ver;//控制子元素排列方向
+}
+.flex(@ver:row){
+  display:flex;//新版将当前对象装换为弹性盒
+  flex-direction: @ver;/*设置主轴方向为水平方向*/
+}
+html{
+  font-size: 62.5%;//将rem转换为1rem=10px;
+}
+html,body,.wrap{
+  .full(100%,100%,#ffffff);
+  .flex(column);
+}
+.header{
+.full(100%,16rem,none);
+  .nav{
+    .full(auto,100%,none);
+    background: url("../images/nav_music.jpg") no-repeat;
+    background-position: center;
+}
+
+}
+.main{
+  Overflow-y:auto;
+  flex-grow: 1;
+  .full(100%,auto,none);
+  p{
+    clear: none;
+    .full(100%,8rem,none);
+    //width: 100%;
+    color: #333333;
+    padding:0  2.6rem;
+    line-height: 8rem;
+    box-sizing: border-box;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    font-size: 1.8rem;
+  }
+  .ju{
+    .full(100%,4rem,none);
+
+    .flex;
+    .ju_l{
+      float: left;
+      .full(6rem,100%,none);
+      background: url("../images/ju_music.png") no-repeat;
+      overflow-y: auto;
+background-position: center ;
+    }
+    .ju_c{
+      flex-grow: 1;
+      text-align: center;
+
+      span{
+        padding: 0 0.5rem;
+        box-sizing: border-box;
+        color: #e3e4e6;
+        font-size: 4rem;
+        line-height: 1rem;
+      }
+    .span{
+      color: green;
+
+      border-radius: 3px;
+      padding: 0 1rem;
+      display: inline-block;
+    }
+    }
+    .ju_r{
+      float: right;
+      .full(6rem,100%,none);
+    }
+
+  }
+  .jishi{
+    font-size: 1.6rem;
+    color: #bababa;
+    .full(100%,4rem,none);
+    line-height: 6.4rem;
+    .flex;
+    .ju_l{
+      float: left;
+      .full(4rem,100%,none);
+      padding-left: 1rem;
+
+    }
+    .ju_c{
+      flex-grow: 1;
+      text-align: center;
+      border-bottom: 2px solid #c8c7cc;
+      font-weight: bold;
+      position: relative;
+      strong{
+        left: -0.8rem; top: 1.2rem;
+        line-height: 1rem;
+        position: absolute;
+        font-size: 8rem;
+        color: green;
+        font-weight: bold;
+      }
+
+    }
+    .ju_r{
+      float: right;
+      .full(4rem,100%,none);
+      padding-left: 1rem;
+    }
+
+  }
+  .anniu{
+    .full(100%,8rem,none);
+    .flex;
+    .ju_l{
+      float: left;
+      .full(7rem,100%,none);
+      background: url("../images/1_music.png") no-repeat;
+      background-position: center center;
+    }
+    .ju_c{
+      flex-grow: 1;
+      //text-align: center;
+      .full(100%,100%,none);
+      background: url("../images/anniu_music.png") no-repeat;
+      background-position: center center;
+    }
+    .ju_r{
+      float: right;
+      .full(7rem,100%,none);
+      background: url("../images/san_music.png") no-repeat;
+      background-position: center center;
+
+    }
+
+  }
+}
+.footer{
+  .full(100%,5rem,none);
+  line-height: 5rem;
+  a{
+    float: left;
+width: 25%;
+    text-align: center;
+  }
+  .a1{
+    .full(25%,5rem,none);
+    display:inline-block;
+    background: url("../images/zuo_music.png") no-repeat;
+    background-position: center center;
+  }
+  .a2{
+    .full(25%,5rem,none);
+    display:inline-block;
+    background: url("../images/xiazai_music.png") no-repeat;
+    background-position: center center;
+  }
+  .a3{
+    .full(25%,5rem,none);
+    display:inline-block;
+    background: url("../images/wujiaox_music.png") no-repeat;
+    background-position: center center;
+  }
+  .a4{
+    .full(25%,5rem,none);
+    display:inline-block;
+    background: url("../images/fenxiang_music.png") no-repeat;
+    background-position: center center;
+  }
+}

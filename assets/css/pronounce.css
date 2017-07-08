@@ -1,0 +1,77 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: auto;
+  display: flex;
+  flex-direction: column;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.header {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: #fafafa;
+}
+.header .hea_img img {
+  width: 100%;
+  height: auto;
+  background: none;
+  position: relative;
+}
+.header h1 {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 6.6rem;
+  font-size: 2rem;
+}
+.header h6 {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 4rem;
+  font-size: 1.4rem;
+}
+.header .tan {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: none;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.main::-webkit-scrollbar {
+  width: 0;
+}
+.main .xiang {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  line-height: 4rem;
+  color: #999999;
+}
+.main .xiang .xiang {
+  float: left;
+  width: 50%;
+  text-align: center;
+  border: 1px solid red;
+}
+.main .xiang .qing {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  height: 4rem;
+  background: #008000;
+}

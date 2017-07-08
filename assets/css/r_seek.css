@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  /*�������᷽��Ϊˮƽ����*/
+  width: 100%;
+  height: 4rem;
+  background: #f8f8f8;
+  border-bottom: 1px solid #e3e3e3;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.header .header_l {
+  flex-grow: 1;
+  float: left;
+  border-radius: 0.3rem;
+}
+.header .header_l em {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: none;
+  display: inline-block;
+  position: absolute;
+  top: 1.2rem;
+  left: 2rem;
+  background: url("../images/sousuo_s.png") no-repeat;
+  z-index: 1;
+}
+.header .header_l input {
+  width: 100%;
+  height: 2.8rem;
+  background: #e3e4e6;
+  outline: none;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 3px;
+  padding-left: 3rem;
+  box-sizing: border-box;
+}
+.header .header_l input::-webkit-input-placeholder {
+  color: #8e8e93;
+  font-size: 14px;
+}
+.header .header_r {
+  width: 6rem;
+  height: 4rem;
+  background: none;
+  float: right;
+  color: #67aa62;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 16px;
+}
+.main {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.main .hot {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  line-height: 5rem;
+  color: #a9a9a9;
+}
+.main .a {
+  padding: 0 0.7rem;
+  box-sizing: border-box;
+}
+.main .a a {
+  float: left;
+  background: #f6f6f6;
+  margin: 0.8rem 0.8rem;
+  border-radius: .4rem;
+  padding: 0.6rem 1rem ;
+  color: #666666;
+}

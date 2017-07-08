@@ -1,0 +1,204 @@
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.header {
+  width: 100%;
+  height: 16rem;
+  background: none;
+}
+.header .nav {
+  width: auto;
+  height: 100%;
+  background: none;
+  background: url("../images/nav_music.jpg") no-repeat;
+  background-position: center;
+}
+.main {
+  Overflow-y: auto;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.main p {
+  clear: none;
+  width: 100%;
+  height: 8rem;
+  background: none;
+  color: #333333;
+  padding: 0  2.6rem;
+  line-height: 8rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-size: 1.8rem;
+}
+.main .ju {
+  width: 100%;
+  height: 4rem;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.main .ju .ju_l {
+  float: left;
+  width: 6rem;
+  height: 100%;
+  background: none;
+  background: url("../images/ju_music.png") no-repeat;
+  overflow-y: auto;
+  background-position: center ;
+}
+.main .ju .ju_c {
+  flex-grow: 1;
+  text-align: center;
+}
+.main .ju .ju_c span {
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  color: #e3e4e6;
+  font-size: 4rem;
+  line-height: 1rem;
+}
+.main .ju .ju_c .span {
+  color: green;
+  border-radius: 3px;
+  padding: 0 1rem;
+  display: inline-block;
+}
+.main .ju .ju_r {
+  float: right;
+  width: 6rem;
+  height: 100%;
+  background: none;
+}
+.main .jishi {
+  font-size: 1.6rem;
+  color: #bababa;
+  width: 100%;
+  height: 4rem;
+  background: none;
+  line-height: 6.4rem;
+  display: flex;
+  flex-direction: row;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.main .jishi .ju_l {
+  float: left;
+  width: 4rem;
+  height: 100%;
+  background: none;
+  padding-left: 1rem;
+}
+.main .jishi .ju_c {
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 2px solid #c8c7cc;
+  font-weight: bold;
+  position: relative;
+}
+.main .jishi .ju_c strong {
+  left: -0.8rem;
+  top: 1.2rem;
+  line-height: 1rem;
+  position: absolute;
+  font-size: 8rem;
+  color: green;
+  font-weight: bold;
+}
+.main .jishi .ju_r {
+  float: right;
+  width: 4rem;
+  height: 100%;
+  background: none;
+  padding-left: 1rem;
+}
+.main .anniu {
+  width: 100%;
+  height: 8rem;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  /*�������᷽��Ϊˮƽ����*/
+}
+.main .anniu .ju_l {
+  float: left;
+  width: 7rem;
+  height: 100%;
+  background: none;
+  background: url("../images/1_music.png") no-repeat;
+  background-position: center center;
+}
+.main .anniu .ju_c {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  background: none;
+  background: url("../images/anniu_music.png") no-repeat;
+  background-position: center center;
+}
+.main .anniu .ju_r {
+  float: right;
+  width: 7rem;
+  height: 100%;
+  background: none;
+  background: url("../images/san_music.png") no-repeat;
+  background-position: center center;
+}
+.footer {
+  width: 100%;
+  height: 5rem;
+  background: none;
+  line-height: 5rem;
+}
+.footer a {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.footer .a1 {
+  width: 25%;
+  height: 5rem;
+  background: none;
+  display: inline-block;
+  background: url("../images/zuo_music.png") no-repeat;
+  background-position: center center;
+}
+.footer .a2 {
+  width: 25%;
+  height: 5rem;
+  background: none;
+  display: inline-block;
+  background: url("../images/xiazai_music.png") no-repeat;
+  background-position: center center;
+}
+.footer .a3 {
+  width: 25%;
+  height: 5rem;
+  background: none;
+  display: inline-block;
+  background: url("../images/wujiaox_music.png") no-repeat;
+  background-position: center center;
+}
+.footer .a4 {
+  width: 25%;
+  height: 5rem;
+  background: none;
+  display: inline-block;
+  background: url("../images/fenxiang_music.png") no-repeat;
+  background-position: center center;
+}

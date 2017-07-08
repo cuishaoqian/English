@@ -1,0 +1,153 @@
+
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+
+.box(@ver:horizontal){
+  display: -webkit-box;//老版将当前对象装换为弹性盒
+  -webkit-box-orient: @ver;//控制子元素排列方向
+}
+.flex(@ver:row){
+  display:flex;//新版将当前对象装换为弹性盒
+  flex-direction: @ver;/*设置主轴方向为水平方向*/
+}
+html{
+  font-size: 62.5%;//将rem转换为1rem=10px;
+}
+html,body,.wrap{
+  .full(100%,100%,auto);
+}
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+
+.box(@ver:horizontal){
+  display: -webkit-box;//老版将当前对象装换为弹性盒
+  -webkit-box-orient: @ver;//控制子元素排列方向
+}
+
+//如果成功不是为了报复的话，那么将毫无意义
+
+.flex(@ver:row){
+  display:flex;//新版将当前对象装换为弹性盒
+  flex-direction: @ver;/*设置主轴方向为水平方向*/
+}
+html{
+  font-size: 62.5%;//将rem转换为1rem=10px;
+}
+html,body,.wrap{
+  .full(100%,100%,auto);
+  .flex(column);
+}
+*{
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+}
+.header{
+  .full(100%,40px,#ffffff);
+  border-bottom: 1px solid #e3e3e3;
+  .flex;
+  .header_l{
+    .full(100px,40px,none);
+       float: left;
+    .dian{
+      .full(3px,15px,none);
+      background: url("../images/lvdian.png") no-repeat;
+      margin: 12px 0 0 18px;
+      box-sizing: border-box;
+      float: left;
+    }
+    .tu{
+      float: left;
+      .full(34px,34px,none);
+      background: url("../images/tu.png") no-repeat;
+     margin-top: 2px;
+      margin-left: 6px;
+    }
+     }
+  .header_c{
+    text-align: center;
+   flex-grow: 1;float: left;
+    .full(100%,40px,none);
+    line-height: 40px;
+    color: #000000;
+    font-size: 16px;
+    //font-weight: bold;
+  }
+  .header_r{
+    float: right;.full(100px,40px,none);
+    .sao{
+      .full(18px,18px,none);
+      background: url("../images/lvsaoyisao.png") no-repeat;
+      margin-top: 10px;
+      float: right;
+      margin-right: 18px;
+    }
+
+  }
+}
+.mass{
+  .full(100%,160px,#ffffff);
+border-bottom: 1px solid #e3e3e3;
+  text-align: center;
+  p{ padding-bottom: 15px;
+    color: #808080;  padding-top: 70px;
+
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+  a{
+color: #ffffff;
+    box-sizing: border-box;
+    background: #49b849;   text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 3px;
+  }
+}
+.main{
+flex-grow: 1;
+.full(63px,103px,none);
+margin: 0 auto;
+  flex-direction: column;
+  background: url("../images/kulian.png") no-repeat center;
+}
+.footer{
+  background: #f8f8f8;
+  width: 100%;
+  height: 49px;
+  border-top: 1px solid #b2b2b2;
+  position: fixed;
+  bottom: 0;
+  a{
+    outline: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+    text-decoration: none;
+    span{
+      display: block;
+      font-size: 10px;
+      color: #717171;
+      font-weight: bold;
+      //
+    }
+    em{
+      position: relative;
+      left: 0;
+      top: 20px;
+      //z-index: 99999;
+    }
+
+  }
+  //text-align: center;
+
+}

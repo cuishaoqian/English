@@ -1,0 +1,82 @@
+
+.full(@w,@h,@bg){
+  width: @w;
+  height: @h;
+  background: @bg;
+}
+
+.box(@ver:horizontal){
+  display: -webkit-box;//老版将当前对象装换为弹性盒
+  -webkit-box-orient: @ver;//控制子元素排列方向
+}
+.flex(@ver:row){
+  display:flex;//新版将当前对象装换为弹性盒
+  flex-direction: @ver;/*设置主轴方向为水平方向*/
+}
+html{
+  font-size: 62.5%;//将rem转换为1rem=10px;
+}
+html,body,.wrap{
+  .full(100%,100%,auto);
+  .flex(column);
+}
+.header{
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: #fafafa;
+.hea_img{
+  img{
+    .full(100%,auto,none);
+    position: relative;
+  }
+}
+  h1{
+    position: absolute;
+    left: 1.2rem;
+    bottom: 6.6rem;
+    font-size: 2rem;
+  }
+h6{
+  position: absolute;
+  left: 1.2rem;
+  bottom: 4rem;
+  font-size: 1.4rem;
+
+}
+.tan{
+  position: absolute;
+  left: 1.2rem;
+  bottom:1.5rem;
+  font-size: 1.4rem;
+}
+}
+.main{
+   .full(100%,100%,none);
+  overflow-y: auto;
+  &::-webkit-scrollbar{width:0;};
+  flex-grow: 1;
+
+  .xiang{
+  .full(100%,4rem,none);
+    line-height: 4rem;
+    color: #999999;
+    .xiang{
+      float: left;
+      width: 50%;
+      text-align: center;
+      border: 1px solid red;
+    }
+    .qing{
+      float: left;
+      width: 50%;
+      text-align: center;
+    }
+  }
+ }
+
+
+.footer{
+  .full(100%,4rem,green);
+}

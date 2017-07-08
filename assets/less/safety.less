@@ -1,0 +1,84 @@
+//@import url("reset.css");
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:horizontal) {
+    display: -webkit-box; //老版将当前对象装换为弹性盒
+    -webkit-box-orient: @ver; //控制子元素排列方向
+}
+.flex(@ver:row) {
+    display: flex; //新版将当前对象装换为弹性盒
+    flex-direction: @ver;
+    /*设置主轴方向为水平方向*/
+}
+html {
+    font-size: 62.5%; //将rem转换为1rem=10px;
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,#f8f8f8);
+    .flex(column);
+    color: #333333;
+}
+.header {
+    .full(100%,4rem,none);
+    .flex;
+    .header_l {
+        float: left;
+        .full(4rem,4rem,none);
+        background: url("../images/zuo_tan.png") no-repeat;
+        background-position: center center;
+    }
+    .header_c {
+        
+        font-size: 1.8rem;
+        flex-grow: 1;
+        .full(100%,4rem,none);
+        line-height: 4rem;
+        text-align: center;
+    }
+    .header_r {
+        float: right;
+        .full(4rem,4rem,none);
+    }
+}
+
+.main {
+   flex-grow: 1;
+    .full(100%,100%,yellow);
+         padding-left: 1.2rem;
+       box-sizing: border-box;
+    .deng{
+        .flex;
+         .full(100%,3.9rem,#ffffff);
+         line-height: 3.8rem;
+         border-bottom: 1px solid #c8c7cc;
+          .header_l {
+        float: left;
+     
+       font-size: 1.4rem;
+  .full(auto,auto,none);
+     text-align: center;
+    }
+    .header_c {
+//margin: 0 10rem;
+//box-sizing: border-box;
+        flex-grow: 1;   
+        .full(auto;3.8rem,blue);
+    }
+    .header_r {
+        float: right;
+        a{
+            display: inline-block;
+            background: url(../images/you_an.png) no-repeat;
+            padding-right: 1.2rem;
+            box-sizing: border-box;
+            background-position: center;
+            .full(2rem,2rem,none);
+        }
+    }
+    }
+}
